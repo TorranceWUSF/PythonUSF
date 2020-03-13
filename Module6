@@ -1,0 +1,16 @@
+def create_rectangle(x, y, w, h):
+    x = self.x
+    y = self.y
+    w = self.width
+    h = self.height
+
+return self
+
+def str_rectangle(self):
+ return (self.x, self.y, self.width, self.height)
+
+
+def shift_rectangle(self, x, y):
+    x= self.x
+    y = self.y
+    return self
