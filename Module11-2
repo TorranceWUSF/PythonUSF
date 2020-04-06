@@ -1,0 +1,11 @@
+import requests
+import bs4
+
+res = requests.get('https://en.wikipedia.org/wiki/Thundercat_(musician)')
+
+res.text
+
+soup = bs4.BeautifulSoup(res.text, 'lxml')
+
+for i in soup.select('title'):
+    print(i.text)
